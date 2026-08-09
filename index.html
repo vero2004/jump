@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L1 모터스 - 모바일 시안</title>
+  <style>
+    /* 기본 리셋 & 모바일 컨테이너 설정 */
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Pretendard', sans-serif; }
+    body { background-color: #f4f5f7; display: flex; justify-content: center; }
+    .mobile-container { width: 100%; max-width: 430px; background: #fff; min-height: 100vh; padding-bottom: 40px; }
+
+    /* 헤더 배너 */
+    .header-banner { background-color: #1a66ff; color: #fff; padding: 12px 16px; font-weight: bold; font-size: 14px; }
+    
+    /* 갤러리 영역 */
+    .gallery { padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+    .main-img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+    .sub-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .sub-img { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; }
+
+    /* 업체 정보 & 액션 버튼 */
+    .info-section { padding: 16px; }
+    .title { font-size: 22px; font-weight: bold; margin-bottom: 4px; }
+    .subtitle { color: #888; font-size: 13px; margin-bottom: 12px; }
+    
+    .action-buttons { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+    .btn { display: flex; align-items: center; justify-content: center; padding: 12px; border-radius: 8px; font-weight: bold; text-decoration: none; color: #fff; }
+    .btn-map { background-color: #f8f9fa; color: #333; border: 1px solid #ddd; }
+    .btn-call { background-color: #1a66ff; }
+    .btn-reserve { background-color: #e8f5e9; color: #2e7d32; }
+
+    /* 정비사 프로필 카드 영역 */
+    .profile-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 0 16px; margin-top: 16px; }
+    .card { background: #112d69; color: #fff; border-radius: 12px; padding: 12px; text-align: center; }
+    .card-photo { width: 50px; height: 50px; background: #fff; color: #112d69; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 8px; font-weight: bold; font-size: 12px; }
+    .card-name { font-size: 14px; font-weight: bold; }
+    .card-career { font-size: 11px; color: #a1b2d6; margin-top: 4px; }
+  </style>
+</head>
+<body>
+
+  <div class="mobile-container">
+    <!-- 헤더 -->
+    <div class="header-banner">🛡️ 의무보증 지정정비업체</div>
+
+    <!-- 이미지 갤러리 -->
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x200" class="main-img" alt="메인 매장">
+    </div>
+    <!-- 대표와 정비사 카드 (2열) -->
+    <div class="profile-grid">
+      <div class="card">
+        <div class="card-photo">사진</div>
+        <div class="card-name">문재호</div>
+        <div class="card-career">경력 25년</div>
+      </div>
+      <div class="card" style="background: #2b52ba;">
+        <div class="card-photo">사진</div>
+        <div class="card-name">김일남훈</div>
+        <div class="card-career">경력 15년</div>
+      </div>
+    </div>
+
+    <!-- 메인 정보 & 실제 작동 링크 버튼 -->
+    <div class="info-section">
+      <h1 class="title">다온 모터스</h1>
+      <p class="subtitle">Daon Motors</p>
+      
+      <div class="action-buttons">
+        <!-- 네이버지도 -->
+        <a href="https://naver.me/FZ2xuahq" target="_blank" class="btn btn-map">📍 길찾기</a>
+        <!-- 모바일 직통 전화 연결 -->
+        <a href="tel:02-1234-5678" class="btn btn-call">📞 전화하기 (0507-1349-8382)</a>
+        <!-- 카카오톡 채널 또는 예약 폼 연동 -->
+        <a href="https://pf.kakao.com" target="_blank" class="btn btn-reserve">✅ 전문가 동행접수</a>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+</html>
